@@ -1,13 +1,18 @@
-import React from 'react'
+// import React from 'react'
 
-let mobileMenu = document.querySelector('.mobile-menu')
-let mainMenu = document.querySelector('.navigation')
+// export const Mobile = () => {
+//     return openMobileMenu()
+// }
 
-mobileMenu.addEventListener('click', function () {
-    mobileMenu.classList.toggle('active-menu')
-    if (mobileMenu.classList.contains('active-menu')) {
-        mainMenu.classList.add('active-menu')
-    } else {
-        mainMenu.classList.remove('active-menu')
-    }
-})
+// function openMobileMenu() {
+//     let mobileMenu = document.querySelector('.mobile-menu')
+//     let mainMenu = document.querySelector('.navigation')
+//     mobileMenu.addEventListener('click', function () {
+//         mobileMenu.classList.toggle('active-menu')
+//         if (mobileMenu.classList.contains('active-menu')) {
+//             mainMenu.classList.add('active-menu')
+//         } else {
+//             mainMenu.classList.remove('active-menu')
+//         }
+//     })
+// }
