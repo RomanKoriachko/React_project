@@ -42,6 +42,12 @@ body {
     .active-menu {
         display: none;
     }
+    .mobile-menu {
+        display: none;
+    }
+    .mobile-menu-close {
+        display: none;
+    }
 }
 .slide1 {
     >img{
@@ -80,15 +86,24 @@ body {
             }
         }
         .mobile-menu {
+            display: block;
             width: 30px;
             height: 30px;
             position: relative;
             color: #e2b149;
         }
+        .mobile-menu-close {
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            color: white;
+            z-index: 10;
+        }
         .menu.active-menu {
             grid-template-columns: 200px;
             grid-template-rows: repeat(6, 50px);
-            transition: 0.5s;
+            transition: 1s;
         }
     }
     .navigation {
@@ -97,7 +112,6 @@ body {
         top: 0;
         right: 0;
         bottom: 0;
-        transform: translateX(150%);
         opacity: 0;
         visibility: hidden;
     }
@@ -109,7 +123,7 @@ body {
         top: 0px;
         padding-top: 80px;
         padding-left: 15px;
-        transform: translateX(0);
+        transition: 1s;
         background-color: #191919;
         a{
             color: #A6A6A6;
