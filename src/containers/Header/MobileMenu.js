@@ -1,0 +1,26 @@
+import React from 'react'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { useState } from 'react'
+
+export const MobileMenu = () => {
+    const [open, setOpen] = useState(false)
+
+    return (
+        <>
+            {open && (
+                <div className="menu navigation active-menu">
+                    <a href="">HOME</a>
+                    <a href="">REPERTOIRE</a>
+                    <a href="">THE ORCHESTRA</a>
+                    <a href="">TICKETS</a>
+                    <a href="">PLAN YOUR VISIT</a>
+                    <a href="">BUY NOW</a>
+                </div>
+            )}
+            <GiHamburgerMenu
+                className="mobile-menu"
+                onClick={() => setOpen(!open)}
+            />
+        </>
+    )
+}

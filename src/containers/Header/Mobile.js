@@ -1,7 +1,18 @@
-// import React from 'react'
+import React from 'react'
+import { DesktopMenu } from './DesktopMenu'
+import { MobileMenu } from './MobileMenu'
+
+export const Mobile = () => {
+    return (
+        <>
+            <DesktopMenu />
+            <MobileMenu />
+        </>
+    )
+}
 
 // export const Mobile = () => {
-//     return openMobileMenu()
+//     openMobileMenu()
 // }
 
 // function openMobileMenu() {
