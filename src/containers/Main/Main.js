@@ -1,10 +1,13 @@
 import React from 'react'
-import slide1 from 'images/slide1.jpg'
+import slideImg from 'images/slide1.jpg'
+import { Slide1 } from './Slide1'
+import { Slide2 } from './Slide2'
 
 export const Main = () => {
     return (
-        <div className="container slide1">
-            {/* <img src={slide1} alt="" /> */}
-        </div>
+        <>
+            <Slide1 />
+            <Slide2 />
+        </>
     )
 }
