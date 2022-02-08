@@ -102,7 +102,7 @@ body {
         .slide1-footer {
             display: grid;
             grid-template-columns: 380px 200px 380px;
-            top: 425px;
+            top: 385px;
         }
     }
 }
@@ -123,6 +123,7 @@ body {
         .slide1-footer {
             display: grid;
             grid-template-columns: 300px 150px 300px;
+            top: 425px;
             >div:nth-child(1) {
                 font-size: 20px;
             }
@@ -210,6 +211,7 @@ body {
             display: grid;
             grid-template-rows: 70px 100px 90px ;
             grid-template-columns: 90%;
+            top: 336px;
             >div:nth-child(1){
                 text-align: center;
             }
@@ -227,6 +229,9 @@ body {
         .slide1-header{
             width: 300px;
             font-size: 32px;
+        }
+        .slide1-footer{
+            top: 356px;
         }
     }
 }
