@@ -18,7 +18,6 @@ export const MobileMenu = () => {
             onClick={() => setOpen(!open)}
         />
     )
-
     return (
         <>
             {open ? closeBtn : openBtn}
