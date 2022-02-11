@@ -1,6 +1,6 @@
 import React from 'react'
-import slideImg from 'images/slide1.jpg'
-import playBtn from 'images/playbtn.png'
+import slideImg from 'assets/slide1.jpg'
+import playBtn from 'assets/playbtn.png'
 
 export const Slide1 = () => {
     return (

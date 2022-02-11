@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from 'images/logo.png'
+import logo from 'assets/logo.png'
 import { Mobile } from 'containers/Header/Mobile'
 
 export const Header = () => {
