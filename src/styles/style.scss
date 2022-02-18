@@ -112,6 +112,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 570px);
     grid-template-rows: repeat(2, 650px);
+    gap: 0px 10px;
     justify-content: space-evenly;
     .cart-content {
         width: 570px;
@@ -123,6 +124,7 @@ body {
             img {
                 width: 570px;
                 height: auto;
+                max-height: 428px;
                 transition: 0.5s;
                 display: block;
                 &:hover {

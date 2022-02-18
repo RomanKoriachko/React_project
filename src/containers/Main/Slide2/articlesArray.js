@@ -8,7 +8,7 @@ export const articlesArray = [
     },
     {
         id: 2,
-        image: '/images/article2.jpg',
+        // image: '/images/article2.jpg',
         title: 'Quisque fermentum neque eu',
         description:
             'Pellentesque suscipit congue eu, semper quis, massa. Nulla facilisi. Etiam nunc ultrices urna, id rutrum sapien. Cras ut leo tristique eget, cursus non, fringilla est, vel ipsum dolor sit amet wisi. Sed aliquet quis, auctor euismod. Sed et magnis.',

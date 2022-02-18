@@ -2,10 +2,11 @@ import React from 'react'
 import like1 from 'assets/like1.png'
 import like2 from 'assets/like2.png'
 import readMore from 'assets/read-more.png'
+import PropTypes from 'prop-types'
 
 export const ArticleItem = ({ image, title, description }) => {
     return (
-        <div className="cart-content">
+        <>
             <div>
                 <img src={image} alt="" />
             </div>
@@ -24,6 +25,15 @@ export const ArticleItem = ({ image, title, description }) => {
                     <p>Read more</p>
                 </div>
             </div>
-        </div>
+        </>
     )
+}
+
+ArticleItem.propTypes = {
+    image: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+}
+ArticleItem.defaultProps = {
+    image: '/images/noimage.jpg',
 }

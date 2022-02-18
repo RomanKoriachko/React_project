@@ -7,11 +7,13 @@ export const Articles = () => {
         <>
             <div className="cart">
                 {articlesArray.map(({ id, image, title, description }) => (
-                    <ArticleItem
-                        image={image}
-                        title={title}
-                        description={description}
-                    />
+                    <div key={id} className="cart-content">
+                        <ArticleItem
+                            image={image}
+                            title={title}
+                            description={description}
+                        />
+                    </div>
                 ))}
             </div>
         </>
