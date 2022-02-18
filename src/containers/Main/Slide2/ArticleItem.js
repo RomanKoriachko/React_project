@@ -5,8 +5,7 @@ import readMore from 'assets/read-more.png'
 import PropTypes from 'prop-types'
 
 export const ArticleItem = ({ image, title, description, likeCount }) => {
-    const [state] = useState(like1)
-
+    const [bgImage, setbgImage] = useState(like1)
     const [like, setLike] = useState(likeCount)
     const onLikeClick = () => {
         setLike((value) => {
@@ -16,8 +15,9 @@ export const ArticleItem = ({ image, title, description, likeCount }) => {
                 return like - 1
             }
         })
+        setbgImage((value) => (value === like1 ? like2 : like1))
+        console.log(bgImage)
     }
-    console.log(like)
 
     return (
         <>
@@ -30,7 +30,15 @@ export const ArticleItem = ({ image, title, description, likeCount }) => {
             </div>
             <div className="cart-btns">
                 <div className="like">
-                    <button onClick={onLikeClick} />
+                    <button
+                        onClick={onLikeClick}
+                        style={{
+                            background: `url(${bgImage})`,
+                            // backgroundRepeat: 'no-repeat',
+                            // backgroundPosition: 'center',
+                            // backgroundSize: '20px',
+                        }}
+                    />
                     <div>{like}</div>
                 </div>
                 <div className="read-more">
