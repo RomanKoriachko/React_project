@@ -111,12 +111,11 @@ body {
 .cart {
     display: grid;
     grid-template-columns: repeat(2, 570px);
-    grid-template-rows: repeat(2, 650px);
-    gap: 0px 10px;
+    gap: 10px 0px;
     justify-content: space-evenly;
     .cart-content {
         width: 570px;
-        height: 610px;
+        min-height: 650px;
         line-height: 1.5;
         >div:nth-child(1){
             overflow: hidden;
@@ -141,20 +140,20 @@ body {
         .cart-btns {
             display: grid;
             grid-template-columns: 40px 120px;
+            grid-template-rows: auto;
             justify-content: space-between;
-            padding: 20px 20px 0px 20px;
+            margin: 20px 20px 0px 20px;
             font-size: 19px;
             .like {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                >img {
-                    width: 25px;
-                    height: 25px;
-                    cursor: pointer;
-                }
-                .likeBtn2 {
-                    display: none;
+                >button {
+                    height: 20px;
+                    width: 20px;
+                    border: none;
+                    background-repeat: no-repeat;
+                    background-position: center;
                 }
             }
             .read-more {
@@ -196,10 +195,10 @@ body {
     }
     .cart {
         grid-template-columns: repeat(2, 500px);
-        grid-template-rows: repeat(2, 650px);
+        // grid-template-rows: repeat(2, 650px);
         .cart-content {
             width: 500px;
-            height: 610px;
+            min-height: 610px;
             >div:nth-child(1){
                 img {
                     width: 500px;
@@ -242,13 +241,13 @@ body {
     }
     .cart {
         grid-template-columns: repeat(2, 380px);
-        grid-template-rows: repeat(2, 600px);
         .cart-content {
             width: 380px;
             min-height: 590px;
             >div:nth-child(1){
                 img {
                     width: 380px;
+                    max-height: 300px;
                 }
             }
         }
@@ -349,7 +348,7 @@ body {
     }
     .cart {
         grid-template-columns: 380px;
-        grid-template-rows: 550px repeat(2, 600px) 550px;
+        // grid-template-rows: 550px repeat(2, 600px) 550px;
         .cart-content {
             width: 380px;
             min-height: 550px;
@@ -383,7 +382,7 @@ body {
     }
     .cart {
         grid-template-columns: 300px;
-        grid-template-rows: repeat(4, 600px);
+        // grid-template-rows: repeat(4, 600px);
         .cart-content {
             width: 300px;
             min-height: 550px;

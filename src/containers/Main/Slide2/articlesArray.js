@@ -5,13 +5,15 @@ export const articlesArray = [
         title: 'Fusce vel felis non metus',
         description:
             'Vivamus ut justo. Suspendisse a augue. Fusce vel felis non metus. Nullam aliquet. Aliquam ultricies ante. Fusce aliquam risus risus nisl, semper et, fermentum risus. Suspendisse egestas purus. Fusce vitae purus. Mauris pretium, ipsum dolor.',
+        likeCount: 5,
     },
     {
         id: 2,
-        // image: '/images/article2.jpg',
+        image: '/images/article2.jpg',
         title: 'Quisque fermentum neque eu',
         description:
             'Pellentesque suscipit congue eu, semper quis, massa. Nulla facilisi. Etiam nunc ultrices urna, id rutrum sapien. Cras ut leo tristique eget, cursus non, fringilla est, vel ipsum dolor sit amet wisi. Sed aliquet quis, auctor euismod. Sed et magnis.',
+        likeCount: 6,
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ export const articlesArray = [
         title: 'Pellentesque eget arcu magna',
         description:
             'Vestibulum nibh. Etiam volutpat a, dolor. Pellentesque eget arcu magna, at magna. Quisque arcu luctus aliquam, nulla id ipsum. Integer id dolor nibh, pretium vitae, nibh. Ut bibendum metus nec mauris. Praesent ac erat. Suspendisse dignissim massa.',
+        likeCount: 9,
     },
     {
         id: 4,
@@ -26,5 +29,6 @@ export const articlesArray = [
         title: 'Vivamus nec egestas risus',
         description:
             'Curabitur ut orci ipsum, rutrum molestie, felis fermentum pede, molestie augue commodo wisi. Phasellus id lectus. Vivamus nec egestas risus metus in dictum aliquet at, suscipit erat. Pellentesque tellus. Integer a diam.',
+        likeCount: 17,
     },
 ]

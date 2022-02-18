@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import like1 from 'assets/like1.png'
 import like2 from 'assets/like2.png'
 import readMore from 'assets/read-more.png'
 import PropTypes from 'prop-types'
 
-export const ArticleItem = ({ image, title, description }) => {
+export const ArticleItem = ({ image, title, description, likeCount }) => {
+    const [state] = useState(like1)
+
+    const [like, setLike] = useState(likeCount)
+    const onLikeClick = () => {
+        setLike((value) => {
+            if (value === likeCount) {
+                return like + 1
+            } else if (value > likeCount) {
+                return like - 1
+            }
+        })
+    }
+    console.log(like)
+
     return (
         <>
             <div>
@@ -16,9 +30,8 @@ export const ArticleItem = ({ image, title, description }) => {
             </div>
             <div className="cart-btns">
                 <div className="like">
-                    <img src={like1} alt="" className="likeBtn1" />
-                    <img src={like2} alt="" className="likeBtn2" />
-                    <div>0</div>
+                    <button onClick={onLikeClick} />
+                    <div>{like}</div>
                 </div>
                 <div className="read-more">
                     <img src={readMore} alt="" />
@@ -33,6 +46,7 @@ ArticleItem.propTypes = {
     image: PropTypes.string,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    likes: PropTypes.number,
 }
 ArticleItem.defaultProps = {
     image: '/images/noimage.jpg',
