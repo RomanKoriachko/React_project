@@ -5,6 +5,20 @@
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+@mixin button {
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px 150px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        color: white;
+        background-color: #382206;
+        border: 2px solid #382206;
+        transition: 0.5s;
+    }
+}
 // Desktop
 .container {
     padding: 0 3%;
@@ -182,21 +196,67 @@ body {
     margin: 50px 0px;
     width: 100%;
     text-align: center;
-    button{
-        background: transparent;
-        border: 2px solid black;
-        border-radius: 5px;
-        padding: 15px 150px;
-        cursor: pointer;
-        transition: 0.5s;
-        &:hover{
-            color: white;
-            background-color: #382206;
-            border: 2px solid #382206;
-            transition: 0.5s;
+    .button{
+        @include button;
+    } 
+}
+
+.slide3 {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    .slide3-left{
+        width: 100%;
+        img{
+            height: 900px;
         }
     }
-    
+    .slide3-right {
+        height: 900px;
+        width: 100%;
+        background-color: #f8f3ea;
+        padding: 90px 220px 40px 60px;
+        font-weight: 400;
+        display: grid;
+        grid-template-rows: 22% 7% 20% 20% 20%;
+    }
+    .slide3-header {
+        font-size: 70px;
+        width: 100px;
+    }
+    .slide3-line {
+        width: 80px;
+        height: 5px;
+        background-color: #d2a23a;
+    }
+    .slide3-count {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #d2a23a;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        >div{
+            width: 130px;
+        }
+        >div:nth-child(2) {
+            width: 150px;
+        }
+        span{
+            font-size: 70px;
+            color: black;
+        }
+    }
+    .slide3-text{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    button{
+         @include button;
+         padding: 15px 20px;
+    }
 }
 
 // Laptop large
@@ -223,6 +283,13 @@ body {
                 img {
                     width: 500px;
                 }
+            }
+        }
+    }
+    .slide3{
+        .slide3-right{
+            >div:last-child{
+                align-self: center;
             }
         }
     }
@@ -368,7 +435,6 @@ body {
     }
     .cart {
         grid-template-columns: 380px;
-        // grid-template-rows: 550px repeat(2, 600px) 550px;
         .cart-content {
             width: 380px;
             min-height: 550px;
@@ -376,6 +442,28 @@ body {
                 img {
                     width: 380px;
                 }
+            }
+        }
+    }
+    .more {
+        .button{
+            @include button;
+            padding: 15px 50px;
+        } 
+    }
+    .slide3{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        .slide3-left{
+            min-height: 600px;
+        }
+        .slide3-right{
+            padding: 90px 60px 40px 60px;
+            .slide3-header{
+                font-size: 53px;
+            }
+            .slide3-text{
+                font-size: 13px;
             }
         }
     }
@@ -409,6 +497,25 @@ body {
             >div:nth-child(1){
                 img {
                     width: 300px;
+                }
+            }
+        }
+    }
+    .slide3{
+        .slide3-right{
+            padding: 40px 30px 0px 30px;
+            grid-template-rows: 15% 5% 25% 20% 20%;
+            .slide3-count{
+                grid-template-columns: 100%;
+                grid-template-rows: 50% 50%;
+                span{
+                    font-size: 60px;
+                }
+                >div:nth-child(1){
+                    width: 125px;
+                }
+                >div:nth-child(2){
+                    width: 145px;
                 }
             }
         }

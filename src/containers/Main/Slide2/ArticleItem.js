@@ -34,9 +34,6 @@ export const ArticleItem = ({ image, title, description, likeCount }) => {
                         onClick={onLikeClick}
                         style={{
                             background: `url(${bgImage})`,
-                            // backgroundRepeat: 'no-repeat',
-                            // backgroundPosition: 'center',
-                            // backgroundSize: '20px',
                         }}
                     />
                     <div>{like}</div>
