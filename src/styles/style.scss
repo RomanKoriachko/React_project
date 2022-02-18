@@ -178,6 +178,26 @@ body {
         }
     }
 }
+.more {
+    margin: 50px 0px;
+    width: 100%;
+    text-align: center;
+    button{
+        background: transparent;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 15px 150px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            color: white;
+            background-color: #382206;
+            border: 2px solid #382206;
+            transition: 0.5s;
+        }
+    }
+    
+}
 
 // Laptop large
 @media (max-width: 1440px) {
@@ -196,7 +216,6 @@ body {
     }
     .cart {
         grid-template-columns: repeat(2, 500px);
-        // grid-template-rows: repeat(2, 650px);
         .cart-content {
             width: 500px;
             min-height: 610px;

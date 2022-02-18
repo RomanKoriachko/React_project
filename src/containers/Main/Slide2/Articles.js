@@ -19,6 +19,9 @@ export const Articles = () => {
                     )
                 )}
             </div>
+            <div className="more">
+                <button>DISCOVER MORE</button>
+            </div>
         </>
     )
 }
