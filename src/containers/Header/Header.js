@@ -6,9 +6,7 @@ export const Header = () => {
     return (
         <div className="container">
             <div className="header">
-                <a href="">
-                    <img src={logo} alt="" />
-                </a>
+                <img src={logo} alt="logo" />
                 <Mobile />
             </div>
         </div>
