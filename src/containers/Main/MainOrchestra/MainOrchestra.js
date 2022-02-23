@@ -1,26 +1,26 @@
 import React from 'react'
-import slideImg from 'assets/slide1.jpg'
+import orchestra from 'assets/orchestra-img.jpg'
 import playBtn from 'assets/playbtn.png'
 
-export const Slide1 = () => {
+export const MainOrchestra = () => {
     return (
         <div className="container">
             <div
-                className="slide1"
+                className="main-orchestra"
                 style={{
-                    backgroundImage: `url(${slideImg})`,
+                    backgroundImage: `url(${orchestra})`,
                 }}
             >
-                <div className="slide1-header">
+                <div className="main-orchestra-header">
                     <span>MORBI VESTIBULUM ID TELLUS COMMODO</span> MATTIS ERAT
                 </div>
-                <div className="slide1-footer">
+                <div className="main-orchestra-footer">
                     <div>
                         QUISQUE LOREM TORTOR FRINGILLA SED, VESTIBULUM ID
                         ELEIFEND JUSTO VEL BIBENDUM
                     </div>
                     <div
-                        className="slide1-footer-btn"
+                        className="main-orchestra-footer-btn"
                         style={{
                             backgroundImage: `url(${playBtn})`,
                         }}

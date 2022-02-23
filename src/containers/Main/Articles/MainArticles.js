@@ -1,11 +1,11 @@
 import React from 'react'
 import { Articles } from './Articles'
-import { Slide2Header } from './Slide2Header'
+import { MainArticlesHeader } from './MainArticlesHeader'
 
-export const Slide2 = () => {
+export const MainArticles = () => {
     return (
         <div className="container-articles">
-            <Slide2Header />
+            <MainArticlesHeader />
             <Articles />
         </div>
     )

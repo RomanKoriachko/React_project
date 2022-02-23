@@ -1,21 +1,21 @@
 import React from 'react'
-import slide3img from 'assets/slide3.jpg'
+import bethemeImg from 'assets/betheme.jpg'
 
-export const Slide3 = () => {
+export const MainBetheme = () => {
     return (
-        <div className="container slide3">
+        <div className="container betheme">
             <div
-                className="slide3-left"
+                className="betheme-left"
                 style={{
-                    backgroundImage: `url(${slide3img})`,
+                    backgroundImage: `url(${bethemeImg})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
             ></div>
-            <div className="slide3-right">
-                <div className="slide3-header">BETHEME ORCHESTRA</div>
-                <div className="slide3-line"></div>
-                <div className="slide3-count">
+            <div className="betheme-right">
+                <div className="betheme-header">BETHEME ORCHESTRA</div>
+                <div className="betheme-line"></div>
+                <div className="betheme-count">
                     <div>
                         <span>75</span> Integer ultrices
                     </div>
@@ -23,7 +23,7 @@ export const Slide3 = () => {
                         <span>12</span> Curabitur et ligula
                     </div>
                 </div>
-                <div className="slide3-text">
+                <div className="betheme-text">
                     Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus,
                     eleifend mi vel, maximus justo. Maecenas mi tortor,
                     pellentesque a aliquam ut, fringilla eleifend lectus.
