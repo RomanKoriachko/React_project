@@ -312,6 +312,128 @@ body {
     }
 }
 
+.info {
+    min-height: 900px;
+    display: grid;
+    grid-template-columns: 1400px;
+    grid-template-rows: 80px 700px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    .tickets{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        align-items: center;
+        gap: 0px 190px;
+        >div{
+            text-align: center;
+            font-size: 25px;
+            >button{
+                background-color: transparent;
+                border: 2px solid black;
+                border-radius: 4px;
+                width: 300px;
+                height: 50px;
+                transition: 0.5s;
+                &:hover{
+                    background-color: #382206;
+                    border-color: #382206;
+                    color: white;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    .links {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100%;
+        .shortcut-links {
+            display: grid;
+            grid-template-rows: 50px 20px 400px;
+            .shortcut-links-header{
+                font-size: 26px;
+            }
+            .links-list {
+                display: grid;
+                grid-template-columns: repeat(3, 260px);
+                justify-content: space-around;
+                color: #4d4d4d;
+                >ul{
+                    >li{
+                        height: 60px;
+                        line-height: 40px;
+                        font-size: 14px;
+                        list-style-type: none;
+                        font-family: "Roboto";
+                        &:hover {
+                            cursor: pointer;
+                            color: #d2a23a;
+                            text-decoration: underline;
+                        }
+                        >img{
+                            position: relative;
+                            top: 3px;
+                            padding-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .about {
+            display: grid;
+            grid-template-rows: 50px 20px 150px 70px 50px;
+            align-items: center;
+            .about-header {
+                font-size: 26px;
+            }
+            .about-text {
+                font-size: 16px;
+                line-height: 25px;
+                color: #4d4d4d;
+                font-family: 'Roboto', sans-serif;
+                >p{
+                    .thumbnail {
+                        font-weight: 700;
+                    }
+                }
+                >p:last-child{
+                    color: #9f9f9f;
+                    padding-top: 15px;
+                }
+            }
+            .about-links{
+                display: grid;
+                grid-template-columns: 80px 120px 30px;
+                text-decoration: underline;
+                >div{
+                    &:hover{
+                        color: #d2a23a;
+                        cursor: pointer;
+                        text-decoration: underline;
+                        text-decoration-color: #d2a23a;
+                    }
+                }
+            }
+            .about-social {
+                display: grid;
+                grid-template-columns: repeat(4, 70px);
+                >img{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+.line {
+    width: 85px;
+    height: 2px;
+    background-color: #d2a23a;
+}
+
+
 // Laptop large
 @media (max-width: 1440px) {
     .main-orchestra {
@@ -343,6 +465,32 @@ body {
         .betheme-right{
             >div:last-child{
                 align-self: center;
+            }
+        }
+    }
+    .info{
+        grid-template-columns: 1000px;
+        grid-template-rows: 160px 960px;
+        .tickets{
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            align-items: center;
+            gap: 0px 0px;
+            >div{
+                font-size: 21px;
+            }
+        }
+        .links{
+            grid-template-columns: 600px 300px;
+            .shortcut-links {
+                grid-template-rows: 50px 20px 400px;
+                .links-list {
+                    grid-template-columns: repeat(3, 160px);
+                    justify-content: start;
+                }
+            }
+            .about {
+                grid-template-rows: 50px 20px 240px 70px 50px;
             }
         }
     }
@@ -388,6 +536,33 @@ body {
                 img {
                     width: 380px;
                     max-height: 300px;
+                }
+            }
+        }
+    }
+    .info{
+        grid-template-columns: 400px;
+        grid-template-rows: 90px 700px;
+        .tickets{
+            grid-template-columns: 230px 230px 230px;
+            >div:nth-child(3){
+                >button {
+                    width: 230px;
+                }
+            }
+        }
+        .links{
+            grid-template-columns: 2fr 1fr;
+            .shortcut-links {
+                .links-list {
+                    grid-template-columns: repeat(3, 140px);
+                    >ul{
+                        >li{
+                            >img{
+                                padding-right: 5px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -534,6 +709,42 @@ body {
             }
         }
     }
+    .info{
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 1400px;
+        .tickets{
+            grid-template-rows: 50px 60px;
+            grid-template-columns: 100%;
+            padding-top: 50px;
+            >div:nth-child(2){
+                display: none;
+            }
+            >div:nth-child(3){
+                >button{
+                    width: 400px;
+                }
+            }
+        }
+        .links{
+            grid-template-columns: 100%;
+            grid-template-rows: 900px 300px;
+            .shortcut-links {
+                grid-template-rows: 50px 20px 400px;
+                .links-list {
+                    grid-template-columns: 100%;
+                    grid-template-rows: repeat(3, 280px);
+                    >ul{
+                        >li{
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+            .about {
+                grid-template-rows: 50px 20px 160px 70px 50px;
+            }
+        }
+    }
 }
 
 // awards-main in column
@@ -614,6 +825,21 @@ body {
         width: 280px;
         height: 30px;
         top: -15px;
+    }
+    .info{
+        grid-template-columns: 100%;
+        .tickets{
+            >div:nth-child(3){
+                >button{
+                    width: 300px;
+                }
+            }
+        }
+        .links{
+            .about{
+                grid-template-rows: 50px 20px 195px 40px 50px;
+            }
+        }
     }
 }
 
