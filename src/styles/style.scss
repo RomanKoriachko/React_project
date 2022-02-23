@@ -207,10 +207,7 @@ body {
     grid-template-columns: 50% 50%;
     justify-items: center;
     .betheme-left{
-        width: 100%;
-        img{
-            height: 900px;
-        }
+        width: 90%;
     }
     .betheme-right {
         height: 900px;
@@ -256,6 +253,62 @@ body {
     button{
          @include button;
          padding: 15px 20px;
+    }
+}
+
+.awards {
+    min-height: 700px;
+    display: grid;
+    grid-template-rows: 150px 100px 250px;
+    grid-template-columns: 700px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    .awards-header {
+        color: #d2a23a;
+        font-size: 70px;
+        font-weight: 400;
+    }
+    .awards-discription{
+        color: #c2c3c5;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        text-align: center;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    .awards-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px 20px;
+        color: white;
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
+.awards-btn{
+    background-color: #d2a23a;
+    border: none;
+    width: 400px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    position: relative;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+        background-color: #b5851c;
+        transition: 0.5s;
     }
 }
 
