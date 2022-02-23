@@ -509,11 +509,50 @@ body {
         }
         .betheme-right{
             padding: 90px 60px 40px 60px;
+            height: 600px;
+            grid-template-rows: 22% 7% 20% 33% 20%;
             .betheme-header{
                 font-size: 53px;
             }
             .betheme-text{
                 font-size: 13px;
+            }
+        }
+    }
+    .awards {
+        grid-template-rows: 100px 100px 200px;
+        grid-template-columns: 100%;
+        .awards-main{
+            gap: 0px;
+            >div{
+                width: 150px;
+                font-size: 18px;
+                >img{
+                    height: 50%;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+// awards-main in column
+@media (max-width: 590px) {
+    .awards{
+        min-height: 900px;
+        grid-template-rows: 70px 100px 700px;
+        .awards-header{
+            font-size: 48px;
+        }
+        .awards-main {
+            grid-template-rows: repeat(3, 230px);
+            grid-template-columns: 100%;
+            >div{
+                width: 200px;
+                height: 230px;
+                >img{
+                    height: auto;
+                }
             }
         }
     }
@@ -554,7 +593,8 @@ body {
     .betheme{
         .betheme-right{
             padding: 40px 30px 0px 30px;
-            grid-template-rows: 15% 5% 25% 20% 20%;
+            grid-template-rows: 18% 7% 30% 30% 13%;
+            align-items: center;
             .betheme-count{
                 grid-template-columns: 100%;
                 grid-template-rows: 50% 50%;
@@ -569,6 +609,11 @@ body {
                 }
             }
         }
+    }
+    .awards-btn{
+        width: 280px;
+        height: 30px;
+        top: -15px;
     }
 }
 
